@@ -20,5 +20,5 @@ Tibble of historical vessel trip information
 Get Vessel History
 }
 \examples{
-get_vesselhistory("Yakima", today() - days(2), today())
+get_vesselhistory("Yakima", "2024-07-01", "2024-07-02")
 }

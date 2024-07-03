@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' get_vesselhistory("Yakima", today() - days(2), today())
+#' get_vesselhistory("Yakima", "2024-07-01", "2024-07-02")
 get_vesselhistory <- function(vesselname, start_date, end_date) {
 
   cat(glue::glue("Getting vessel history for {vesselname}..."))

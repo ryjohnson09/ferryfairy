@@ -12,8 +12,10 @@ LazyData: true
 URL: https://github.com/ryjohnson09/ferryfairy
 BugReports: https://github.com/ryjohnson09/ferryfairy/issues
 Imports: 
+    dplyr,
     glue,
     httr2,
+    janitor,
     jsonlite,
     stringr,
     tibble
