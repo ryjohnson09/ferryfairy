@@ -3,3 +3,4 @@
 export(convert_timestamp)
 export(get_terminal_weather_history)
 export(get_vesselhistory)
+export(get_vesselinfo)
