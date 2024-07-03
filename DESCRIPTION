@@ -12,7 +12,9 @@ LazyData: true
 URL: https://github.com/ryjohnson09/ferryfairy
 BugReports: https://github.com/ryjohnson09/ferryfairy/issues
 Imports: 
+    glue,
     httr2,
     jsonlite,
-    stringr
+    stringr,
+    tibble
 RoxygenNote: 7.3.2
