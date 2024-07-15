@@ -1,4 +1,4 @@
-#' A wrapper around DBI::dbWriteTable that Write a data frame to the specified database and schema
+#' A wrapper around DBI::dbWriteTable that writes a data frame to the specified database and schema
 #'
 #' @param df input databframe
 #' @param name the name of the table to be written to the database
@@ -14,10 +14,8 @@
 #' write_df_to_db(vesselhistory_raw, my_username, con, append = TRUE)
 write_df_to_db <- function(df, name, con, schema = Sys.getenv("DATABASE_SCHEMA"), append = FALSE, overwrite = FALSE) {
 
-  tablename <- paste0(deparse(substitute(df)), name)
-
   # print informational statement
-  print(glue::glue("Writing df {tablename} to database schema {schema}..."),"\n")
+  print(glue::glue("Writing df {name} to database schema {schema}..."),"\n")
 
   # Insert your start time stamp
   start_time <- Sys.time()
@@ -25,7 +23,7 @@ write_df_to_db <- function(df, name, con, schema = Sys.getenv("DATABASE_SCHEMA")
   DBI::dbWriteTable(conn = con, # the connection
                     name = DBI::Id(
                       schema=schema, # our database schema
-                      name=my_df_name), # the name of the table you will create in the DB
+                      name=name), # the name of the table you will create in the DB
                     value = df,
                     append = append,
                     overwrite = overwrite)
@@ -34,7 +32,7 @@ write_df_to_db <- function(df, name, con, schema = Sys.getenv("DATABASE_SCHEMA")
   end_time <- Sys.time()
   duration <- end_time - start_time
 
-  print(glue::glue("ℹ️ Info: Writing {tablename} to database took",
+  print(glue::glue("ℹ️ Info: Writing {name} to database took",
                    round(duration[[1]], 2),  units(duration)))
 
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/write_df_to_db.R
 \name{write_df_to_db}
 \alias{write_df_to_db}
-\title{A wrapper around DBI::dbWriteTable that Write a data frame to the specified database and schema}
+\title{A wrapper around DBI::dbWriteTable that writes a data frame to the specified database and schema}
 \usage{
 write_df_to_db(
   df,
@@ -30,7 +30,7 @@ write_df_to_db(
 a confirmation statement
 }
 \description{
-A wrapper around DBI::dbWriteTable that Write a data frame to the specified database and schema
+A wrapper around DBI::dbWriteTable that writes a data frame to the specified database and schema
 }
 \examples{
 write_df_to_db(vesselhistory_raw, my_username, con, append = TRUE)
