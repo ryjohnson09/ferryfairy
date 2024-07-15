@@ -19,5 +19,6 @@ Imports:
     janitor,
     jsonlite,
     stringr,
-    tibble
+    tibble, 
+    DBI
 RoxygenNote: 7.3.2
