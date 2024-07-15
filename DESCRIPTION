@@ -1,7 +1,7 @@
 Package: ferryfairy
 Type: Package
 Title: Seattle Ferry Data API Helpers
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: c(
     person("Ryan", "Johnson", , "ryan@posit.co", role = c("aut", "cre")),
     person("Katie", "Masiello", , "katie.masiello@posit.co", role = "aut")

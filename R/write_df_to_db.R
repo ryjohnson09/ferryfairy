@@ -7,7 +7,7 @@
 #' @param append argument to dbWriteTable
 #' @param overwrite argument to dbWriteTable
 #'
-#' @return
+#' @return a confirmation statement
 #' @export
 #'
 #' @examples

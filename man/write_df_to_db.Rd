@@ -26,6 +26,9 @@ write_df_to_db(
 
 \item{overwrite}{argument to dbWriteTable}
 }
+\value{
+a confirmation statement
+}
 \description{
 A wrapper around DBI::dbWriteTable that Write a data frame to the specified database and schema
 }
