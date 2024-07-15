@@ -32,7 +32,7 @@ write_df_to_db <- function(df, name, con, schema = Sys.getenv("DATABASE_SCHEMA")
   end_time <- Sys.time()
   duration <- end_time - start_time
 
-  print(glue::glue("ℹ️ Info: Writing {name} to database took",
+  print(glue::glue("ℹ️ Info: Writing {name} to database took ",
                    round(duration[[1]], 2),  units(duration)))
 
 }
