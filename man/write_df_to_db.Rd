@@ -4,14 +4,7 @@
 \alias{write_df_to_db}
 \title{A wrapper around DBI::dbWriteTable that writes a data frame to the specified database and schema}
 \usage{
-write_df_to_db(
-  df,
-  name,
-  con,
-  schema = Sys.getenv("DATABASE_SCHEMA"),
-  append = FALSE,
-  overwrite = FALSE
-)
+write_df_to_db(df, name, con, append = FALSE, overwrite = FALSE)
 }
 \arguments{
 \item{df}{input databframe}
@@ -19,8 +12,6 @@ write_df_to_db(
 \item{name}{the name of the table to be written to the database}
 
 \item{con}{the database connection}
-
-\item{schema}{schema, defaults to the value of the environment variable DATABASE_SCHEMA}
 
 \item{append}{argument to dbWriteTable}
 
