@@ -1,3 +1,6 @@
+# ferryfairy 0.1.4 
+- fix write_df_to_db, which still referenced a schema
+
 # ferryfairy 0.1.3
 
 - remove database schema specification from `write_df_to_db`

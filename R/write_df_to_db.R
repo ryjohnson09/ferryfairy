@@ -1,6 +1,6 @@
-#' A wrapper around DBI::dbWriteTable that writes a data frame to the specified database and schema
+#' A wrapper around DBI::dbWriteTable that writes a data frame to the specified database
 #'
-#' @param df input databframe
+#' @param df input dataframe
 #' @param name the name of the table to be written to the database
 #' @param con the database connection
 #' @param append argument to dbWriteTable
@@ -14,7 +14,7 @@
 write_df_to_db <- function(df, name, con, append = FALSE, overwrite = FALSE) {
 
   # print informational statement
-  print(glue::glue("Writing df {name} to database schema {schema}..."),"\n")
+  print(glue::glue("Writing df {name} to database..."),"\n")
 
   # Insert your start time stamp
   start_time <- Sys.time()
