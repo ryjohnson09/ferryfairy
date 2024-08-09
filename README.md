@@ -1,11 +1,11 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ferryfairy
+# ferryfairy <img src="man/figures/logo.png" align="right" height="138" alt="ferryfairy logo">
 
 The goal of `ferryfairy` is to provide users with a set of wrapper
 functions to make accessing data from the [public Seattle Ferry
-API](https://wsdot.wa.gov/Ferries/API/Vessels/rest/help) and
+API](https://wsdot.wa.gov/Ferries/API/Vessels/rest/help) and associated
 weather API (<https://open-meteo.com/>) as simple as possible!
 
 ## Installation
